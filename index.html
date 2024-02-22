@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFM-Design</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Boxicons-->
+    <link rel="stylesheet" href="boxicons.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <h1>Fortune</h1>
+        </a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+        <div id="menu-icon"><box-icon name='menu'></box-icon></div>
+    </header>
+    <section id="sect">
+        <div class="info">
+            <h1>Web <br>Developer</h1>
+            <p>
+                Hi, I'm <strong>Fortune Malatji</strong>, an aspiring web developer. I have a deep passion<br> for
+                coding and I am open to collaboration and freelance opportunities.
+            </p>
+            <div class="socials">
+                <a href="www.linkedin.com/in/khennethfortune"><box-icon name='linkedin' type='logo'></box-icon></a>
+                <a href=""><box-icon type='logo' name='github'></box-icon></a>
+                <a href="CURRICULUM VITAE OF Malatji Khenneth.pdf"
+                    download="CURRICULUM VITAE OF Malatji Khenneth.pdf">Download CV</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/demo-PhotoRoom.png-PhotoRoom.png" alt="">
+        </div>
+    </section>
+    <section id="abouthead">
+        
+        <div id="about">
+            <div class="abouttitle">
+                <h3>About Me</h3>
+            </div>
+            <div class="cont">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="details">
+                            <h1>Bio.</h1>
+                            <p>Hello, I'm Fortune Malatji, Born on July 7, 2000, in Limpopo. I'm deeply passionate about
+                                soccer
+                                and coding. Playing soccer brings me joy and teamwork, while coding allows me to solve
+                                complex
+                                problems and unleash my creativity. I'm committed to excelling in learning new skills
+                                and
+                                actively engaging in extracurricular activities. With a thirst for knowledge and
+                                personal
+                                growth, I embrace challenges and strive to make a positive impact in my community. As a
+                                driven
+                                individual, I aim to pursue a promising future in my chosen fields, eager to contribute
+                                to
+                                society with my skills and passion.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="details">
+                            <h1>Education</h1>
+                            <p>&rArr;</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="details">
+                            <h1>Education</h1>
+                            <div class="education-info">
+                                <h2>Bachelor of Science in Computer Science</h2>
+                                <p>University of Johannesburg, 2024</p>
+                            </div>
+                            <div class="education-info">
+                                <h2>High School Admission to Bachelor</h2>
+                                <p>Maremisha High School , 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot" onclick="currentSlide = 1; updateSlider();" class="active"></div>
+                    <div class="dot" onclick="currentSlide = 2; updateSlider();"></div>
+                    <div class="dot" onclick="currentSlide = 3; updateSlider();"></div>
+
+                </div>
+            </div>
+            <div class="abouttitle">
+                <h3>About Me</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="project">
+        <div class="tit">
+            <h2 class="section-heading text-center">My Projects</h2>
+        </div>
+        <div class="proj">
+            <div>
+                <img class="project-img" src="img/tap2shop.PNG" alt="">
+                <div class="site">
+                </div>
+                </img>
+            </div>
+            <div class="project-description">
+                <h1 class="headT"><strong>Tap2Shop</strong></h1><br>
+                <p>Tap2shop this is a webbsite that advertises the delivery app which is found on google play. it also
+                    has About us and contact pages</p>
+                <br> <a class="btn" href="http://tap2shop.co.za/"><strong class="arrow"> Visit &rArr;</strong></a>
+            </div>
+        </div>
+        <div class="proj">
+            <div class="project-description1">
+                <h1 class="headT"><strong>LibraPro</strong></h1><br>
+                <p>LibraPro is an online platform for borrowing books, streamlining book discovery and lending processes.
+                     Subscribed users receive alerts about new book arrivals and can reserve books, getting notified upon availability.</p>
+                   <br> <a class="btn" href="">Visit: &#8594;</a>
+            </div>
+
+            <div>
+                <img class="project-img" src="img/library.PNG" alt="">
+            </div>
+        </div>
+        <div class="proj">
+            <div>
+                <img class="project-img" src="img/thegoldenmiller.PNG" alt="">
+                <div class="site">
+                    <a href="">Visit the site...</a>
+                </div>
+                </img>
+            </div>
+            <div class="project-description">
+                <h1 class="headT"><strong>The Golden Miller</strong></h1><br>
+                <p>Website for an investment Company that believes in growing the community whilst making</p>
+                <br> <a class="btn" href="http://thegoldenmiller.co.za/">Visit &rArr;</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="skills">
+        <div class="head-info">
+            <h1>Skills</h1>
+        </div>
+        <div class="container">
+            <div class="skill1">
+                <div class="information">
+                    <box-icon class="icon" name='html5' type='logo' size='lg' animation='' color='orange'></box-icon>
+                    <div class="info">
+                        <h1>Html</h1>
+                        <p>
+                            Advanced HTML proficiency (80-90%) in creating visually captivating and well-optimized
+                            websites
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill1">
+                <div class="information">
+                    <box-icon type='logo' name='css3' size='lg' color='blue' class="icon"></box-icon>
+                    <h1>css</h1>
+                    <p>
+                        Skilled in CSS, designing visually appealing and responsive web pages.
+                    </p>
+                </div>
+            </div>
+            <div class="skill1">
+                <div class="information">
+                    <box-icon type='logo' name='javascript' size='lg' color='yellow' class="icon"></box-icon>
+                    <h1>Javascript</h1>
+                    <p>
+                        Proficient in JavaScript, creating interactive and dynamic web applications.
+                    </p>
+                </div>
+            </div>
+            <div class="skill1">
+                <div class="information">
+                    <box-icon type='logo' name='bootstrap' size='lg' color='purple' class="icon"></box-icon>
+                    <h1>BootStrap</h1>
+                    <p>
+                        Proficient in Bootstrap, creating responsive and visually engaging web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+
+        <div class="copyright">
+            &copy; Copyright 2024 Design by KFM
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        let currentSlide = 1;
+
+        function nextSlide() {
+            if (currentSlide < 3) {
+                currentSlide++;
+                updateSlider();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlider();
+            }
+        }
+
+        function updateSlider() {
+            const slider = document.querySelector('.slider');
+            slider.style.height = `${slider.scrollHeight}px`; /* Set height to the actual content height */
+            slider.style.transform = `translateX(-${(currentSlide - 1) * 33.33}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index + 1 === currentSlide);
+            });
+        }
+    </script>
+</body>
+
+</html>

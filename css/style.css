@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root{
+    --gray:#585454;
+    --white:#fff;
+    --black:#000;
+    --orange:#fa7d08;
+}
+*{
+    font-size: 1.125rem;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    background-color: #ec5;
+    
+}
+@keyframes slideRight{
+    100%{
+        width:0;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%  ;
+    padding-top: 40px;
+       
+}
+a h1{
+    color:var(--white);
+    font-size: 2rem;
+    
+}
+.navbar{
+    display: inline;
+    justify-content: space-between;
+    
+}
+.navbar a{
+    text-decoration: none;
+    margin: 15px;
+    color: var(--white);
+    transition: 0.5s;
+    
+
+}
+.navbar a:hover{
+    border-bottom: 1px solid var(--white);
+    color: var(--orange);
+
+}
+#menu-icon{
+    display: none;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+}
+#sect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90.2vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+#sect .info{
+    color: var(--white);
+}
+#sect .info h1{
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+#sect .info h1:hover{
+    transform:translateX(5px);
+    color: var(--orange);
+}
+#sect .info p{
+    color: var(--white);
+    margin-bottom: 40px;
+}
+ .socials a{
+    justify-content: center;
+    align-self: center;
+    padding: 12px 30px;
+    line-height: 1.4;
+    margin:40px 10px 20px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--white);
+    border:1px solid #4d9e86;
+    border-radius: 30px;
+    background: transparent;
+    transition: 0.5s;
+}
+ .socials a:hover{
+    color: var(--white);
+    border:1px solid var(--orange);
+    border-end-end-radius: 10px;
+    transform: translateY(10px);
+}
+#sect img{
+
+    height: 506px;
+    width: 420px;
+    background-position: center;
+    background-size: cover;
+   /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
+
+}
+.photo img{
+    height: 360px;
+    width: 420px;
+    background-size: cover;
+    padding-left: 50px;
+    /*clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);*/
+    /*clip-path: polygon(30% 0%, 70% 0%, 100% 17.5%, 100% 83.5%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);*/
+
+}
+#abouthead{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin: 20px;
+    padding: 30px;
+}
+.abouttitle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 20px;
+
+
+}
+.abouttitle h3{
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Kaushan Script', cursive ;
+
+}
+#about .details{
+    height: 406px;
+    width: 750px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+}
+#about .details {
+    font-weight: 300;
+    margin: 30px 40px 15px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#about .details p{
+    margin:30px 40px 15px ;
+    line-height: 1.2;
+}
+#about .details h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:700;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--white);
+}
+.social a{
+    justify-content: center;
+    align-self: center;
+    padding: 10px 20px;
+    line-height: 1.4;
+    margin:40px 10px 20px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--white);
+    border:1px solid #4d9e86;
+    border-radius: 30px;
+    background: transparent;
+    transition: 0.5s;
+    display: block;
+    padding-right: 20px;
+}
+.social a:hover{
+    color: var(--white);
+    border:1px solid var(--orange);
+    border-end-end-radius: 10px;
+    transform: translateY(-10px);
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.pd input{
+    height: 10%;
+    width: 100%; 
+    line-height: 1.4;  
+}
+
+#skills{ 
+    min-height: 100vh;
+    padding-bottom: 90px;
+}
+#skills .container{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.skill1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    width: 300px;
+    height: 450px;
+    border-radius:5px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px var(--orange);
+    transform: translateY(-8px);
+
+}
+.conatiner .skill1 .information{
+    display: flex;
+    justify-content: center;
+}
+.head-info{
+    display: flex;
+    justify-content:center;
+}
+.head-info h1{
+    font-family: 'Kaushan Script', cursive ;
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 70px;
+}
+.skill1 h1{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive ;
+}
+.skill1 p{
+    margin: 15px;
+    line-height: 1.2;
+    font-family: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+
+.container .skill1 .information .icon{
+    margin-left: 40%;
+}
+
+footer{
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+.quicklinks{
+    display: flex;
+
+}
+
+/* Projects Section Styles */
+
+.section-heading{
+    font-size: 30px;
+}
+
+
+.Project_container{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.project-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-description{
+    width: 450px;
+    height: 100px;
+    opacity: 0.3;
+    background-blend-mode: soft-light;
+    transition: 0.8s;
+    color: #000;
+}
+.Projectinfo{
+    border: 1px solid #000;
+    transition: .5s;
+    
+}
+ .Projectinfo:hover{
+    display: block;
+}
+/*-----------About me------------*/
+.cont {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    /* Three slides, each taking up 100% width */
+    transition: transform 0.5s ease-in-out;
+    height: auto;
+    /* Set initial height to 0 */
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    /* Each slide takes up 33.33% of the container */
+}
+
+.details {
+    padding: 20px;
+    text-align: center;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+/* --------Projects--------*/
+#project{
+    min-height: 100vh;
+    background-color:#ec5;
+}
+.proj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+.project-img{
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px 5px ;
+    box-shadow: 1px 2px #fff;
+    border-radius: 8px;
+}
+.site{
+    display: none;
+}
+
+.headT{
+    color: #fff;
+}
+.tit{
+    font-family: 'Kaushan Script', cursive ;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 10px;
+}
+.project-description1
+{
+    width: 450px;
+    height: 300px;
+}
+.btn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+.btn:hover{
+    padding-right: 20px;
+    
+}
